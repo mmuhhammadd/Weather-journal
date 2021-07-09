@@ -1,9 +1,9 @@
 /* Global Variables */
-const apiKey = '6decea5f402964f2a9dcef3edccbdfa1';
+const apiKey = '6decea5f402964f2a9dcef3edccbdfa1&units=imperial';
 const data = document.querySelector('#content');
 // Create a new date instance dynamically with JS
 let d = new Date();
-let newDate = d.getMonth()+'.'+ d.getDate()+'.'+ d.getFullYear();
+let newDate = (d.getMonth() + 1)+'.'+ d.getDate()+'.'+ d.getFullYear();
 
 // Posting data to app
 async function postData(url = '', data = {}) {
